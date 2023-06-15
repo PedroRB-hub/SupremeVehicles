@@ -1,0 +1,256 @@
+@import url("../global/global.css");
+
+html {
+  background: var(--color15);
+}
+
+body {
+  height: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* section 1 carrossel */
+.section1 {
+  margin: 0px auto;
+  box-shadow: 2px 2px 0px var(--color5);
+}
+
+.carousel-inner img {
+  height: 90vh;
+  width: 90%;
+}
+
+/* section 2 IMGs e texts */
+.section2 {
+  margin: 0px 0px 25px 0px;
+  color: var(--color7);
+  background: var(--color15);
+  border-bottom: 2px solid var(--color5);
+}
+
+.section2 h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+.flex_grid {
+  display: grid;
+  grid-template-areas: 1fr 1fr;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container p {
+  align-self: center;
+  justify-self: center;
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+
+/* section 3 img e text */
+.section3 {
+  background-color: var(--color15);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.section3 img {
+  max-width: 100%;
+  box-shadow: 2px 0px 0px var(--color5);
+}
+
+.section3 p {
+  color: var(--color7);
+  padding: 20px;
+  font-size: 1.4rem;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.section3 p:last-child {
+  grid-column: 1 / -1;
+}
+
+/* section 4 politicas e reserva */
+.section4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  color: var(--color7);
+}
+
+.section4 img {
+  min-height: 100%;
+}
+
+.section4 .texto {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--color13);
+}
+
+.section4 .texto p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.section4 .texto a {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  align-self: top;
+}
+
+.section4 .comprar {
+  background-color: var(--color13);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid var(--color9);
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--color3);
+  font-size: 1.6rem;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color14);
+}
+
+.reservar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1/2fr;
+}
+
+.reservar p {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 10px;
+}
+
+.reservar button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.4rem;
+  border: none;
+  background: var(--color5);
+  color: var(--color7);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.reservar input {
+  font-size: 1rem;
+  padding-left: 5px;
+  margin: 10px;
+}
+
+/* section 5 pesquisa e filtro */
+.section5 {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px minmax(300px);
+  gap: 20px;
+  padding: 20px;
+  color: var(--color7);
+  text-align: center;
+}
+
+.section5 img {
+  object-fit: cover;
+}
+
+.section5 button {
+  width: 120px;
+  border: none;
+  background-color: var(--color3);
+  font-weight: 600;
+  justify-self: center;
+  color: var(--color7);
+}
+
+.pesquisa {
+  grid-column: 1 / -1;
+}
+
+/* FIM DO MAIN */
+/* Responsivo */
+@media screen and (max-width: 1310px) {
+  .section1 {
+    height: auto;
+    margin: 0px auto;
+  }
+
+  .carousel-inner img {
+    height: auto;
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .container img:first-child {
+    grid-row: 2;
+  }
+
+  .section3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section3 p {
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section4 {
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .section4 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+  }
+}
