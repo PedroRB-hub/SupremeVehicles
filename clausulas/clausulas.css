@@ -1,0 +1,20 @@
+@import url("../global/global.css");
+html {
+  background: var(--color14);
+}
+body {
+  height: 0;
+}
+.container {
+  background-color: var(--color7);
+  margin: 10px;
+  padding: 20px 0px;
+  color: var(--color15);
+}
+.container h2, .container p {
+  padding: 0px 10px;
+}
+.container p {
+  text-align: justify;
+  font-size: 1.3rem;
+}
