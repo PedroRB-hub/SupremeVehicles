@@ -1,7 +1,10 @@
 @import url(global/global.css);
 
 html {
-  background: var(--color15);
+  background: rgb(45,45,45);
+  background: -moz-radial-gradient(circle, rgba(45,45,45,1) 0%, rgba(10,10,10,1) 100%);
+  /* background: -webkit-radial-gradient(circle, rgba(45,45,45,1) 0%, rgba(10,10,10,1) 100%); */
+  /* background: radial-gradient(circle, rgba(45,45,45,1) 0%, rgba(10,10,10,1) 100%); */
 }
 body {
   height: 0;
@@ -13,22 +16,22 @@ main {
   color: var(--color7);
 }
 header {
-  border-bottom: 1px solid var(--color5);
+  color: #E8E8E8;
+  border-bottom: 2px solid #E8E8E8;
 }
 
 .secao1 {
   margin: 50px 0px;
   padding: 10px;
-  background: var(--color14);
+  background: var(--color15);
   border-radius: 5px;
-  box-shadow: 2px 2px 0px var(--color5);
 }
 
 .secao1 h2 {
   text-align: center;
   margin: 7px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: 2px;
 }
@@ -45,9 +48,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: var(--color14);
+  background: var(--color15);
   border-radius: 5px;
-  box-shadow: 2px 2px 0px var(--color5);
 }
 
 .texto {
@@ -75,12 +77,12 @@ header {
 
 .secao3 {
   margin: 50px 0px;
-  background: var(--color14);
+  background: var(--color15);
   border-radius: 5px;
   font-size: 1.4rem;
   line-height: 30px;
   text-align: justify;
-  box-shadow: 2px 2px 0px var(--color5);
+
 }
 
 .secao3 img {

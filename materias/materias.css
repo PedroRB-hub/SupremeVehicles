@@ -1,18 +1,9 @@
 @import url("../global/global.css");
 
-html {
-  background: var(--color15);
-}
-
-body {
-  height: 0;
-  font-family: 'Rajdhani', sans-serif;
-}
 
 /* section 1 carrossel */
 .section1 {
   margin: 0px auto;
-  box-shadow: 2px 2px 0px var(--color5);
 }
 
 .carousel-inner img {
@@ -24,8 +15,7 @@ body {
 .section2 {
   margin: 0px 0px 25px 0px;
   color: var(--color7);
-  background: var(--color15);
-  border-bottom: 2px solid var(--color5);
+  /* background: var(--color15); */
 }
 
 .section2 h2 {
@@ -56,17 +46,12 @@ body {
 
 /* section 3 img e text */
 .section3 {
-  background-color: var(--color15);
+  /* background-color: var(--color15); */
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 3fr 1fr;
   align-items: center;
   margin: 20px 0px;
-}
-
-.section3 img {
-  max-width: 100%;
-  box-shadow: 2px 0px 0px var(--color5);
 }
 
 .section3 p {
@@ -110,6 +95,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 2px;
   align-self: top;
+  text-decoration: none;
 }
 
 .section4 .comprar {
@@ -130,8 +116,9 @@ td {
 }
 
 th {
-  background-color: var(--color3);
+  background-color: var(--color16);
   font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 tr:nth-child(even) {
@@ -155,7 +142,7 @@ tr:nth-child(even) {
   padding: 5px;
   font-size: 1.4rem;
   border: none;
-  background: var(--color5);
+  background: var(--color18);
   color: var(--color7);
   border-radius: 5px;
   text-transform: uppercase;
@@ -186,7 +173,7 @@ tr:nth-child(even) {
 .section5 button {
   width: 120px;
   border: none;
-  background-color: var(--color3);
+  background-color: var(--color20);
   font-weight: 600;
   justify-self: center;
   color: var(--color7);
@@ -238,6 +225,10 @@ tr:nth-child(even) {
     grid-template-columns: 500px;
     justify-content: center;
   }
+  .section3 img {
+    padding: 15px;
+  margin-top: -25px;
+}
 }
 
 @media screen and (max-width: 530px) {
@@ -245,6 +236,7 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
     justify-content: center;
   }
+
 
   header {
     grid-template-columns: 1fr;
